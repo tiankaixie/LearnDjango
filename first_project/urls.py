@@ -20,5 +20,6 @@ from first_app import views
 urlpatterns = [
     url(r'^$', views.index, name = 'index'),
     url(r'^first_app/', include('first_app.urls')),
+    url(r'^form_page/', views.form_name_view.form)
     url(r'^admin/', admin.site.urls),
 ]
